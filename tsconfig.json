@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.base.json",
+  "files": [],
+  "references": [
+    { "path": "apps/backend" },
+    { "path": "apps/frontend" },
+    { "path": "apps/bot" },
+    { "path": "packages/ui" },
+    { "path": "packages/database" },
+    { "path": "packages/transactional" }
+  ],
+  "include": []
+}

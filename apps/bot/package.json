@@ -1,0 +1,13 @@
+{
+  "name": "@daima/bot",
+  "module": "src/index.ts",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.4.3"
+  },
+  "dependencies": {
+    "discord.js": "^14.15.2"
+  }
+}
