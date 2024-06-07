@@ -6,18 +6,18 @@ import {
   Html,
   Preview,
   Tailwind,
-} from "@react-email/components";
-import { formattedDate, formattedDevice } from "./formatter";
+} from "@react-email/components"
+import { formattedDate, formattedDevice } from "./formatter"
 
 interface LoginAccountProps {
-  username: string;
-  loginDate?: Date;
-  loginDevice: string;
-  loginIP: string;
+  username: string
+  loginDate?: Date
+  loginDevice: string
+  loginIP: string
 }
 
 interface ExtendedFC<P> extends React.FC<P> {
-  PreviewProps?: P;
+  PreviewProps?: P
 }
 
 const LoginAccount: ExtendedFC<Readonly<LoginAccountProps>> = ({
@@ -26,8 +26,8 @@ const LoginAccount: ExtendedFC<Readonly<LoginAccountProps>> = ({
   loginDevice,
   loginIP,
 }) => {
-  const formatDevice = formattedDevice(loginDevice);
-  const formatDate = formattedDate(loginDate || new Date());
+  const formatDevice = formattedDevice(loginDevice)
+  const formatDate = formattedDate(loginDate || new Date())
 
   return (
     <Html>
@@ -43,14 +43,14 @@ const LoginAccount: ExtendedFC<Readonly<LoginAccountProps>> = ({
         </Body>
       </Tailwind>
     </Html>
-  );
-};
+  )
+}
 
 LoginAccount.PreviewProps = {
   username: "ex",
   loginDevice:
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
   loginIP: "127.0.0.1",
-} as LoginAccountProps;
+} as LoginAccountProps
 
-export default LoginAccount;
+export default LoginAccount

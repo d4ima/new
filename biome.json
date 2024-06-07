@@ -16,7 +16,7 @@
   "javascript": {
     "formatter": {
       "trailingComma": "all",
-      "semicolons": "always",
+      "semicolons": "asNeeded",
       "quoteStyle": "double"
     },
     "parser": {
@@ -30,6 +30,6 @@
     }
   },
   "files": {
-    "ignore": ["node_modules", "public", "dist"]
+    "ignore": ["**/node_modules", "bun.lockb"]
   }
 }

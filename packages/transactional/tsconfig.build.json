@@ -1,8 +1,10 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
+    "composite": false,
     "outDir": "dist",
-    "rootDir": "emails"
+    "rootDir": "emails",
+    "jsx": "react-jsx"
   },
-  "include": ["emails/**/*"]
+  "include": ["emails"]
 }

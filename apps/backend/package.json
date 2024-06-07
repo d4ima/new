@@ -1,11 +1,11 @@
 {
   "name": "@daima/backend",
-  "module": "src/index.ts",
   "type": "module",
   "devDependencies": {
+    "@daima/db": "workspace:*",
     "@types/bun": "latest"
   },
   "peerDependencies": {
-    "typescript": "^5.4.3"
+    "typescript": "^5.0.0"
   }
 }

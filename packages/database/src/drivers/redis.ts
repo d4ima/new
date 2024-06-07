@@ -1,1 +1,1 @@
-console.log("TODO: implement redis adapter");
+console.log("TODO: implement redis adapter")

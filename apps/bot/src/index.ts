@@ -1,1 +1,1 @@
-console.log("Bun in fire");
+console.log("@daima/bot")

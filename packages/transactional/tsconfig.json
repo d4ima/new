@@ -2,6 +2,7 @@
   "extends": "../../tsconfig.base.json",
   "include": ["emails"],
   "compilerOptions": {
+    "jsx": "react-jsx",
     "outDir": "../../dist/transactional"
   },
   "references": [{ "path": "./tsconfig.build.json" }, { "path": "../ui" }]

@@ -1,1 +1,1 @@
-console.log("TODO: implement postgres adapter");
+console.log("TODO: implement postgres adapter")
